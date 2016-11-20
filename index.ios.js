@@ -30,6 +30,7 @@ class feelioIosApp extends Component {
 
   componentDidMount() {
     this.fetchWeather();
+    this.fetchTimeOfDay();
   }
 
   render() {
@@ -41,7 +42,16 @@ class feelioIosApp extends Component {
   }
 
   fetchTimeOfDay() {
-
+    var now = new Date();
+    if (now.getHours() < 17) {
+      this.setState({
+        isDaylight: true
+      });
+    } else {
+      this.setState({
+        isDaylight: false
+      });
+    }
   }
 
   fetchWeather() {
