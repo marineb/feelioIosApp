@@ -1,28 +1,93 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+
 
 import React, { Component } from 'react';
+
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  ActivityIndicator
 } from 'react-native';
 
 class feelioIosApp extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      weatherJSON: [],
+      isLoading: true
+    };
+
+  }
+
+  componentDidMount() {
+    this.fetchWeather();
+  }
+
+  // componentWillMount goes here
+
   render() {
+    var {isLoading} = this.state;
+    if(isLoading)
+      return this.renderLoadingMessage();
+    else
+      return this.renderResults();
+  }
+
+  initialize() {
+    this.setState({
+      weatherJSON: [],
+      isLoading: true
+    });
+  }
+
+  fetchWeather() {
+    var url = 'https://www.feelio.cc/db_calls/feelio-api.php?format=json';
+    // var url = 'http://unsplash.it/list';
+    fetch(url)
+      .then( response => response.json() )
+      .then( jsonData => {
+        var phrase;
+        var weather = [];
+        phrase = jsonData.feelio_api.currently.phrase;
+        weather.push(phrase);
+
+        this.setState({
+          isLoading: false,
+          weatherJSON: [].concat(weather)
+        });
+      })
+    .catch( error => console.log('Fetch error ' + error) );
+  }
+
+  renderLoadingMessage() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Feelio!
-        </Text>
+      <View style={styles.loadingContainer}>
+        { /* used to be an loading icon there. felt too cheesy. */ }
+        <Text style={{color: '#fff', fontSize: 24}}>Good evening</Text>
       </View>
     );
   }
-}
+
+  renderResults(phrase) {
+    var {weatherJSON, isLoading} = this.state;
+    console.log('weatherJSON: '+weatherJSON);
+    if ( !isLoading) {
+      return (
+        <View style={styles.container}>
+            <Text>
+            Right now
+            {phrase}
+            <Text style={{color: 'red'}}>{weatherJSON}</Text>
+            </Text>
+        </View>
+      );
+    }
+  }
+
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -30,7 +95,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-    backgroundColor: '#222'
+  },
+  loadingContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#142233'
   },
   welcome: {
     fontSize: 20,
