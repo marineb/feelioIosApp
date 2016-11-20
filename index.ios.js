@@ -36,13 +36,6 @@ class feelioIosApp extends Component {
       return this.renderResults();
   }
 
-  initialize() {
-    this.setState({
-      weatherJSON: [],
-      isLoading: true
-    });
-  }
-
   fetchWeather() {
     var url = 'https://www.feelio.cc/db_calls/feelio-api.php?format=json';
     // var url = 'http://unsplash.it/list';
@@ -50,13 +43,14 @@ class feelioIosApp extends Component {
       .then( response => response.json() )
       .then( jsonData => {
         var phrase;
-        var weather = [];
-        phrase = jsonData.feelio_api.currently.phrase;
-        weather.push(phrase);
+        var weatherData = [];
+        console.log(jsonData);
+        weather = jsonData.feelio_api.currently;
+        weatherData.push(weather);
 
         this.setState({
           isLoading: false,
-          weatherJSON: [].concat(weather)
+          weatherJSON: [].concat(weatherData)
         });
       })
     .catch( error => console.log('Fetch error ' + error) );
@@ -73,15 +67,20 @@ class feelioIosApp extends Component {
 
   renderResults(phrase) {
     var {weatherJSON, isLoading} = this.state;
-    console.log('weatherJSON: '+weatherJSON);
     if ( !isLoading) {
       return (
         <View style={styles.container}>
-            <Text>
-            Right now
-            {phrase}
-            <Text style={{color: 'red'}}>{weatherJSON}</Text>
-            </Text>
+            <View style={styles.main}>
+              <Text style={styles.h1}>
+                {weatherJSON[0].phrase}{"\n"}
+              </Text>
+            </View>
+            <View style={styles.secondary}>
+              <Text style={styles.h2}>
+                Feels like {weatherJSON[0].feels_like}°F{"\n"}
+                {weatherJSON[0].summary}
+              </Text>
+            </View>
         </View>
       );
     }
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#fafafa'
   },
   loadingContainer: {
     flex: 1,
@@ -103,17 +102,27 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#142233'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: 'white'
+  main: {
+    margin: 0,
+    padding: 0,
+    height: 40
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  secondary: {
+
   },
+  h1: {
+    fontSize: 24,
+    lineHeight: 32,
+    margin: 0,
+    padding: 0,
+    textAlign: 'center'
+  },
+  h2: {
+    fontSize: 16,
+    lineHeight: 24,
+    color: '#999',
+    textAlign: 'center'
+  }
 });
 
 AppRegistry.registerComponent('feelioIosApp', () => feelioIosApp);
