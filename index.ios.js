@@ -17,16 +17,20 @@ class feelioIosApp extends Component {
 
     this.state = {
       weatherJSON: [],
-      isLoading: true
+      isLoading: true,
+      isDaylight: true
     };
+
+    // Refresh data every 60 seconds (60,000 ms)
+    setInterval(() => {
+      this.fetchWeather();
+    }, 60000);
 
   }
 
   componentDidMount() {
     this.fetchWeather();
   }
-
-  // componentWillMount goes here
 
   render() {
     var {isLoading} = this.state;
@@ -36,9 +40,12 @@ class feelioIosApp extends Component {
       return this.renderResults();
   }
 
+  fetchTimeOfDay() {
+
+  }
+
   fetchWeather() {
     var url = 'https://www.feelio.cc/db_calls/feelio-api.php?format=json';
-    // var url = 'http://unsplash.it/list';
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
@@ -72,7 +79,7 @@ class feelioIosApp extends Component {
         <View style={styles.container}>
             <View style={styles.main}>
               <Text style={styles.h1}>
-                {weatherJSON[0].phrase}{"\n"}
+                {weatherJSON[0].phrase}
               </Text>
             </View>
             <View style={styles.secondary}>
@@ -93,7 +100,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fafafa'
+    paddingLeft: 10,
+    paddingRight: 10,
+    backgroundColor: '#142233'
   },
   loadingContainer: {
     flex: 1,
@@ -103,9 +112,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#142233'
   },
   main: {
-    margin: 0,
-    padding: 0,
-    height: 40
   },
   secondary: {
 
@@ -113,14 +119,15 @@ const styles = StyleSheet.create({
   h1: {
     fontSize: 24,
     lineHeight: 32,
-    margin: 0,
+    marginBottom: 10,
     padding: 0,
+    color: '#fff',
     textAlign: 'center'
   },
   h2: {
     fontSize: 16,
     lineHeight: 24,
-    color: '#999',
+    color: 'rgba(255,255,255,.2)',
     textAlign: 'center'
   }
 });
