@@ -18,12 +18,12 @@ class feelioIosApp extends Component {
     this.state = {
       weatherJSON: [],
       isLoading: true,
-      isDaylight: true
+      welcome: 'Good morning'
     };
 
     // Refresh data every 60 seconds (60,000 ms)
     setInterval(() => {
-      this.fetchWeather();
+      this.componentDidMount();
     }, 60000);
 
   }
@@ -43,13 +43,13 @@ class feelioIosApp extends Component {
 
   fetchTimeOfDay() {
     var now = new Date();
-    if (now.getHours() < 17) {
+    if (now.getHours() < 17 && now.getHours() > 5) {
       this.setState({
-        isDaylight: true
+        welcome: 'Good morning.'
       });
     } else {
       this.setState({
-        isDaylight: false
+        welcome: 'Good evening.'
       });
     }
   }
@@ -77,27 +77,35 @@ class feelioIosApp extends Component {
     return (
       <View style={styles.loadingContainer}>
         { /* used to be an loading icon there. felt too cheesy. */ }
-        <Text style={{color: '#fff', fontSize: 24}}>Good evening</Text>
+        <ActivityIndicator
+          animating={true}
+          color={'rgba(255,255,255,.5)'}
+          size={'small'}
+          style={{margin: 15}} />
+        <Text style={{color: '#fff', fontSize: 24}}></Text>
       </View>
     );
   }
 
-  renderResults(phrase) {
-    var {weatherJSON, isLoading} = this.state;
+  renderResults() {
+    var {weatherJSON, isLoading, welcome} = this.state;
     if ( !isLoading) {
       return (
         <View style={styles.container}>
-            <View style={styles.main}>
-              <Text style={styles.h1}>
-                {weatherJSON[0].phrase}
-              </Text>
-            </View>
-            <View style={styles.secondary}>
-              <Text style={styles.h2}>
-                Feels like {weatherJSON[0].feels_like}°F{"\n"}
-                {weatherJSON[0].summary}
-              </Text>
-            </View>
+          <View style={styles.main}>
+          <Text style={styles.welcome}>
+            {welcome}
+          </Text>
+            <Text style={styles.h1}>
+              {weatherJSON[0].phrase}
+            </Text>
+          </View>
+          <View style={styles.secondary}>
+            <Text style={styles.h2}>
+              Feels like {weatherJSON[0].feels_like}°F{"\n"}
+              {weatherJSON[0].summary}
+            </Text>
+          </View>
         </View>
       );
     }
@@ -121,23 +129,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#142233'
   },
-  main: {
-  },
-  secondary: {
-
+  welcome: {
+    fontSize: 24,
+    lineHeight: 34,
+    textAlign: 'center',
+    color: 'rgba(255,255,255,1)'
   },
   h1: {
     fontSize: 24,
-    lineHeight: 32,
-    marginBottom: 10,
-    padding: 0,
+    lineHeight: 34,
+    marginBottom: 5,
     color: '#fff',
     textAlign: 'center'
   },
   h2: {
     fontSize: 16,
-    lineHeight: 24,
-    color: 'rgba(255,255,255,.2)',
+    lineHeight: 28,
+    color: 'rgba(255,255,255,.3)',
     textAlign: 'center'
   }
 });
