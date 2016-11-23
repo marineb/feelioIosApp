@@ -47,7 +47,7 @@ class feelioIosApp extends Component {
       this.setState({
         welcome: 'Good morning.'
       });
-    } else if (now.getHours() > 12 && now.getHours() > 17) {
+    } else if (now.getHours() > 12 && now.getHours() < 17) {
       this.setState({
         welcome: 'Good afternoon.'
       });
