@@ -43,9 +43,13 @@ class feelioIosApp extends Component {
 
   fetchTimeOfDay() {
     var now = new Date();
-    if (now.getHours() < 17 && now.getHours() > 5) {
+    if (now.getHours() < 12 && now.getHours() > 5) {
       this.setState({
         welcome: 'Good morning.'
+      });
+    } else if (now.getHours() > 12 && now.getHours() > 17) {
+      this.setState({
+        welcome: 'Good afternoon.'
       });
     } else {
       this.setState({
@@ -55,7 +59,7 @@ class feelioIosApp extends Component {
   }
 
   fetchWeather() {
-    var url = 'https://www.feelio.cc/db_calls/feelio-api.php?format=json';
+    var url = 'https://www.feelio.cc/api-1.0.php?format=json';
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
