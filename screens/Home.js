@@ -40,11 +40,11 @@ export default class Home extends Component {
 
   fetchTimeOfDay() {
     var now = new Date();
-    if (now.getHours() < 12 && now.getHours() > 5) {
+    if (now.getHours() < 12 && now.getHours() >= 5) {
       this.setState({
         welcome: 'Good morning.'
       });
-    } else if (now.getHours() > 12 && now.getHours() < 17) {
+    } else if (now.getHours() >= 12 && now.getHours() < 17) {
       this.setState({
         welcome: 'Good afternoon.'
       });
