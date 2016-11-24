@@ -1,13 +1,6 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
-
 #import "AppDelegate.h"
+
+#import "RCCManager.h" // Added for react-native-navigation
 
 #import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
@@ -20,6 +13,14 @@
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
+  // Added for react-native-navigation
+  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  self.window.backgroundColor = [UIColor whiteColor];
+  [[RCCManager sharedInstance] initBridgeWithBundleURL:jsCodeLocation];
+
+/*
+  // Original RN bootstrap - we remove this part for react-native-navigation
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"feelioIosApp"
                                                initialProperties:nil
@@ -31,6 +32,8 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+*/
+
   return YES;
 }
 
