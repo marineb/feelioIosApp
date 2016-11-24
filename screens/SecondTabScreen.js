@@ -48,7 +48,7 @@ export default class SecondTabScreen extends Component {
           disabled: true
         },
         {
-          icon: require('../img/navicon_add.png'),
+          icon: require('../img/settings.png'),
           id: 'add'
         }
       ];
