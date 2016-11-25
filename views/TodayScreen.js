@@ -15,7 +15,7 @@ export default class TodayScreen extends Component {
     }]
   };
 
-  static navigatorStyle: {
+  static navigatorStyle = {
     navBarBackgroundColor: 'transparent',
     navBarTextColor: 'transparent',
     navBarButtonColor: '#ffffff',
