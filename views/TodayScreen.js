@@ -21,10 +21,7 @@ export default class TodayScreen extends Component {
     navBarButtonColor: '#ffffff',
     drawUnderNavBar: true,
     navBarTransparent: true,
-    navBarTranslucent: true,
-    tabBarBackgroundColor: 'transparent',
-    tabBarButtonColor: '#ffffff',
-    tabBarSelectedButtonColor: '#ffff00',
+    navBarTranslucent: true
   };
 
   constructor(props) {

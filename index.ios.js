@@ -23,12 +23,13 @@ const createTabs = () => {
   ];
   return tabs;
 };
+
 // this will start our app
 Navigation.startTabBasedApp({
   tabs: createTabs(),
-  appStyle: {
-    tabBarBackgroundColor: 'transparent',
-    tabBarButtonColor: '#ffffff',
+  tabsStyle: { // for Android, use AppStyle
+    tabBarBackgroundColor: '#142233',
+    tabBarButtonColor: 'white',
     tabBarSelectedButtonColor: 'white'
   },
   drawer: {
