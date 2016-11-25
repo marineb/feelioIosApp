@@ -28,6 +28,7 @@ export default class Home extends Component {
   componentDidMount() {
     this.fetchWeather();
     this.fetchTimeOfDay();
+    console.log("Component mounted.");
   }
 
   render() {

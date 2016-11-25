@@ -1,4 +1,8 @@
-import { Platform } from 'react-native';
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  Platform
+} from 'react-native';
 import { Navigation } from 'react-native-navigation';
 
 import { registerViews } from './views';
@@ -39,4 +43,4 @@ Navigation.startTabBasedApp({
   }
 });
 
-{/* AppRegistry.registerComponent('feelioIosApp', () => feelioIosApp); */}
+AppRegistry.registerComponent('feelioIosApp', () => feelioIosApp);
