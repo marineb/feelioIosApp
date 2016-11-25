@@ -1,27 +1,24 @@
 import { Platform } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 
-import { registerScreens } from './screens';
-registerScreens(); // this is where you register all of your app's screens
+import { registerViews } from './views';
+registerViews(); // register all of the app's screens
 
 const createTabs = () => {
   let tabs = [
     {
       label: 'Now',
-      screen: 'example.FirstTabScreen',
+      screen: 'feelio.NowScreen',
       icon: require('./img/now.png'),
       selectedIcon: require('./img/now_selected.png'),
       title: 'Now'
     },
     {
       label: 'Today',
-      screen: 'example.SecondTabScreen',
+      screen: 'feelio.TodayScreen',
       icon: require('./img/today.png'),
       selectedIcon: require('./img/today_selected.png'),
-      title: 'Today',
-      navigatorStyle: {
-        tabBarBackgroundColor: 'pink',
-      }
+      title: 'Today'
     }
   ];
   return tabs;
@@ -30,13 +27,13 @@ const createTabs = () => {
 Navigation.startTabBasedApp({
   tabs: createTabs(),
   appStyle: {
-    tabBarBackgroundColor: 'black',
+    tabBarBackgroundColor: 'transparent',
     tabBarButtonColor: '#ffffff',
     tabBarSelectedButtonColor: 'white'
   },
   drawer: {
     left: {
-      screen: 'example.SideMenu'
+      screen: 'feelio.Settings'
     }
   }
 });

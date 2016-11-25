@@ -1,32 +1,30 @@
 import React, { Component } from 'react';
 import {
-  Text,
-  View,
-  TouchableOpacity,
   StyleSheet,
-  Alert,
-  Platform
+  Text,
+  View
 } from 'react-native';
-import { Navigation } from 'react-native-navigation';
 
 import Home from './Home';
 
-export default class FirstTabScreen extends Component {
+export default class NowScreen extends Component {
   static navigatorButtons = {
     leftButtons: [{
       icon: require('../img/settings.png'),
       id: 'settings'
     }]
   };
+
   static navigatorStyle = {
-    navBarBackgroundColor: '#142233',
-    navBarTextColor: '#ffffff',
-    navBarSubtitleTextColor: '#ff0000',
+    navBarBackgroundColor: 'transparent',
+    navBarTextColor: 'transparent',
     navBarButtonColor: '#ffffff',
-    // statusBarTextColorScheme: 'light',
-    tabBarBackgroundColor: '#4dbce9',
+    drawUnderNavBar: true,
+    navBarTransparent: true,
+    navBarTranslucent: true,
+    tabBarBackgroundColor: 'transparent',
     tabBarButtonColor: '#ffffff',
-    tabBarSelectedButtonColor: '#ffff00'
+    tabBarSelectedButtonColor: '#ffff00',
   };
 
   constructor(props) {
@@ -55,11 +53,4 @@ export default class FirstTabScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-  button: {
-    textAlign: 'center',
-    fontSize: 18,
-    marginBottom: 10,
-    marginTop: 10,
-    color: 'white'
-  }
 });
