@@ -2,17 +2,25 @@ import React, {Component} from 'react';
 import {
   Text,
   View,
-  ScrollView,
   TouchableOpacity,
-  StyleSheet,
-  AlertIOS
+  StyleSheet
 } from 'react-native';
 
+import DeviceInfo from 'react-native-device-info';
+
 export default class Settings extends Component {
+
   constructor(props) {
     super(props);
+
+    this.state = {
+      appVersion: DeviceInfo.getVersion(),
+      appBuild: DeviceInfo.getBuildNumber()
+    };
   }
+
   render() {
+    var {appVersion, appBuild} = this.state;
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Settings</Text>
@@ -20,6 +28,9 @@ export default class Settings extends Component {
         <TouchableOpacity onPress={ this.onReplaceTab2Press.bind(this) }>
           <Text style={styles.button}>Unit toggle coming soon.</Text>
         </TouchableOpacity>
+
+        <Text style={styles.small}>Version {appVersion}</Text>
+        <Text style={styles.small}>Build {appBuild}</Text>
 
       </View>
     );
@@ -73,5 +84,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop:10,
     color: 'white'
+  },
+  small: {
+    color: 'rgba(255,255,255,.3)'
   }
 });

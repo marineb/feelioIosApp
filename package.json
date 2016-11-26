@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "15.3.2",
     "react-native": "0.37.0",
+    "react-native-device-info": "^0.9.6",
     "react-native-navigation": "^2.0.0-experimental.142"
   },
   "jest": {

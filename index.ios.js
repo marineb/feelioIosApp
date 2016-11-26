@@ -31,7 +31,7 @@ const createTabs = () => {
 // this will start our app
 Navigation.startTabBasedApp({
   tabs: createTabs(),
-  tabsStyle: { // for Android, use AppStyle
+  tabsStyle: { // for Android, use appStyle
     tabBarBackgroundColor: '#142233',
     tabBarButtonColor: 'white',
     tabBarSelectedButtonColor: 'white'
