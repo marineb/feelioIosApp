@@ -7,7 +7,7 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-export default class Home extends Component {
+export default class TodayData extends Component {
 
   constructor(props) {
     super(props);
@@ -27,7 +27,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.fetchWeather();
-    this.fetchTimeOfDay();
+    this.setHours();
     console.log("Component mounted.");
   }
 
@@ -39,21 +39,21 @@ export default class Home extends Component {
       return this.renderResults();
   }
 
-  fetchTimeOfDay() {
+  getTimeIn(aFewHours) {
     var now = new Date();
-    if (now.getHours() < 12 && now.getHours() >= 5) {
-      this.setState({
-        welcome: 'Good morning.'
-      });
-    } else if (now.getHours() >= 12 && now.getHours() < 17) {
-      this.setState({
-        welcome: 'Good afternoon.'
-      });
-    } else {
-      this.setState({
-        welcome: 'Good evening.'
-      });
-    }
+    var then = new Date(now.getTime() + (aFewHours*60)*60000);
+    var amOrPm = then.getHours() >= 12 ? "PM" : "AM";
+    var hour = then.getHours() % 12;
+    hour = hour ? hour : 12;
+    return hour+":00 "+amOrPm;
+  }
+
+  setHours() {
+    this.setState({
+      three: this.getTimeIn(3),
+      six: this.getTimeIn(6),
+      twelve: this.getTimeIn(12)
+    });
   }
 
   fetchWeather() {
@@ -64,7 +64,7 @@ export default class Home extends Component {
         var phrase;
         var weatherData = [];
         console.log(jsonData);
-        weather = jsonData.feelio_api.currently;
+        weather = jsonData.feelio_api;
         weatherData.push(weather);
 
         this.setState({
@@ -90,22 +90,44 @@ export default class Home extends Component {
   }
 
   renderResults() {
-    var {weatherJSON, isLoading, welcome} = this.state;
+    var {weatherJSON, isLoading, three, six, twelve} = this.state;
     if ( !isLoading) {
       return (
         <View style={styles.container}>
-          <View style={styles.main}>
-          <Text style={styles.welcome}>
-            {welcome}
-          </Text>
+          <View style={styles.section}>
+            <Text style={styles.time}>
+              {three}
+            </Text>
             <Text style={styles.h1}>
-              {weatherJSON[0].phrase}
+              {weatherJSON[0].inThreeHours.phrase}
+            </Text>
+            <Text style={styles.h2}>
+              Feels like {weatherJSON[0].inThreeHours.feels_like}°F{"\n"}
+              {weatherJSON[0].inThreeHours.summary}
             </Text>
           </View>
-          <View style={styles.secondary}>
+          <View style={styles.section}>
+            <Text style={styles.time}>
+              {six}
+            </Text>
+            <Text style={styles.h1}>
+              {weatherJSON[0].inSixHours.phrase}
+            </Text>
             <Text style={styles.h2}>
-              Feels like {weatherJSON[0].feels_like}°F{"\n"}
-              {weatherJSON[0].summary}
+              Feels like {weatherJSON[0].inSixHours.feels_like}°F{"\n"}
+              {weatherJSON[0].inSixHours.summary}
+            </Text>
+          </View>
+          <View style={styles.section}>
+            <Text style={styles.time}>
+              {twelve}
+            </Text>
+            <Text style={styles.h1}>
+              {weatherJSON[0].inTwelveHours.phrase}
+            </Text>
+            <Text style={styles.h2}>
+              Feels like {weatherJSON[0].inTwelveHours.feels_like}°F{"\n"}
+              {weatherJSON[0].inTwelveHours.summary}
             </Text>
           </View>
         </View>
@@ -131,24 +153,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#142233'
   },
-  welcome: {
-    fontSize: 24,
-    lineHeight: 38,
+  time: {
+    fontSize: 14,
+    lineHeight: 22,
     textAlign: 'center',
-    color: 'rgba(255,255,255,1)'
+    color: 'rgba(255,255,255,.3)'
   },
   h1: {
-    fontSize: 24,
-    lineHeight: 38,
+    fontSize: 20,
+    lineHeight: 24,
     marginBottom: 5,
     color: '#fff',
     textAlign: 'center'
   },
   h2: {
-    fontSize: 16,
-    lineHeight: 28,
+    fontSize: 14,
+    lineHeight: 22,
     color: 'rgba(255,255,255,.3)',
-    textAlign: 'center'
+    textAlign: 'center',
+    marginBottom: 30
   }
 });
 

@@ -5,7 +5,7 @@ import {
   View
 } from 'react-native';
 
-import Home from './Home';
+import TodayData from './TodayData';
 
 export default class TodayScreen extends Component {
   static navigatorButtons = {
@@ -42,7 +42,7 @@ export default class TodayScreen extends Component {
   render() {
     return (
       <View style={{flex: 1, padding: 20, backgroundColor: '#142233'}}>
-        <Home />
+        <TodayData />
       </View>
     );
   }
