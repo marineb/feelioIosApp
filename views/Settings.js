@@ -28,10 +28,10 @@ export default class Settings extends Component {
         <TouchableOpacity onPress={ this.onReplaceTab2Press.bind(this) }>
           <Text style={styles.button}>Unit toggle coming soon.</Text>
         </TouchableOpacity>
-
-        <Text style={styles.small}>Version {appVersion}</Text>
-        <Text style={styles.small}>Build {appBuild}</Text>
-
+        <View style={styles.appDetails}>
+          <Text style={styles.small}>Version {appVersion}</Text>
+          <Text style={styles.small}>Build {appBuild}</Text>
+        </View>
       </View>
     );
   }
@@ -82,10 +82,18 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 18,
     marginBottom: 10,
-    marginTop:10,
+    marginTop: 10,
     color: 'white'
   },
   small: {
-    color: 'rgba(255,255,255,.3)'
+    color: 'rgba(255,255,255,.3)',
+    textAlign: 'center',
+    lineHeight: 20
+  },
+  appDetails: {
+    bottom: 50,
+    position: 'absolute',
+    justifyContent: 'center',
+    width: 300
   }
 });
