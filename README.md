@@ -11,7 +11,7 @@ Make new requests (bugs, enhancements, etc) on the [issues page](https://github.
 ## Upcoming features
 These are the features we're working on, mostly in that order.
 
-You can also checkout our [development roadmap](https://github.com/marineb/feelio-ios-app/projects/1).
+You can also check out our [development roadmap](https://github.com/marineb/feelio-ios-app/projects/1).
 
 - Get the weather no matter where I am (geolocate users, and create a new Feelio API) [#4](https://github.com/marineb/feelio-ios-app/issues/4) [#5](https://github.com/marineb/feelio-ios-app/issues/5)
 - Smarter "now" algorithm that takes into account the rest of the day / night [#6](https://github.com/marineb/feelio-ios-app/issues/6)
