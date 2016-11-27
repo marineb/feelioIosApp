@@ -61,7 +61,6 @@ export default class Home extends Component {
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
-        var phrase;
         var weatherData = [];
         console.log(jsonData);
         weather = jsonData.feelio_api.currently;
@@ -90,22 +89,22 @@ export default class Home extends Component {
   }
 
   renderResults() {
-    var {weatherJSON, isLoading, welcome} = this.state;
+    var {isLoading} = this.state;
     if ( !isLoading) {
       return (
         <View style={styles.container}>
           <View style={styles.main}>
           <Text style={styles.welcome}>
-            {welcome}
+            {this.state.welcome}
           </Text>
             <Text style={styles.h1}>
-              {weatherJSON[0].phrase}
+              {this.state.weatherJSON[0].phrase}
             </Text>
           </View>
           <View style={styles.secondary}>
             <Text style={styles.h2}>
-              Feels like {weatherJSON[0].feels_like}°F{"\n"}
-              {weatherJSON[0].summary}
+              Feels like {this.state.weatherJSON[0].feels_like}°F{"\n"}
+              {this.state.weatherJSON[0].summary}
             </Text>
           </View>
         </View>

@@ -24,6 +24,9 @@ You can also checkout our [development roadmap](https://github.com/marineb/feeli
 - If it’s the evening, don’t give me upcoming hourly (like 4am) but just the weather for tomorrow. And if I’ll need an umbrella.
 - A way to switch from °F to °C
 
+## Setup
+- `npm install`
+- `react-native run-ios`
 
 ## License
 

@@ -42,7 +42,7 @@ export default class TodayScreen extends Component {
 
   render() {
     return (
-      <View style={{flex: 1, padding: 20, backgroundColor: '#142233'}}>
+      <View style={{flex: 1, padding: 20}}>
         <TodayData />
       </View>
     );
