@@ -1,12 +1,17 @@
 # Feelio for iOS
 Building an iOS app for Feelio ☔️
+
 It's currently being beta tested. Coming soon to the Apple App Store.
+
 
 ## Request new features
 Make new requests (bugs, enhancements, etc) on the [issues page](https://github.com/marineb/feelio-ios-app/issues).
 
+
 ## Upcoming features
-These are the features we're working on, mostly in that order. You can also checkout our [development roadmap](https://github.com/marineb/feelio-ios-app/projects/1).
+These are the features we're working on, mostly in that order.
+
+You can also checkout our [development roadmap](https://github.com/marineb/feelio-ios-app/projects/1).
 
 - Get the weather no matter where I am (geolocate users, and create a new Feelio API) [#4](https://github.com/marineb/feelio-ios-app/issues/4) [#5](https://github.com/marineb/feelio-ios-app/issues/5)
 - Smarter "now" algorithm that takes into account the rest of the day / night [#6](https://github.com/marineb/feelio-ios-app/issues/6)
@@ -18,6 +23,7 @@ These are the features we're working on, mostly in that order. You can also chec
   - A theme that changes depending on day/night and the weather
 - If it’s the evening, don’t give me upcoming hourly (like 4am) but just the weather for tomorrow. And if I’ll need an umbrella.
 - A way to switch from °F to °C
+
 
 ## License
 
