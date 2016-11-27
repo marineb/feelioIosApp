@@ -18,11 +18,11 @@ const createTabs = () => {
       title: 'Now'
     },
     {
-      label: 'Today',
+      label: 'Later',
       screen: 'feelio.TodayScreen',
       icon: require('./img/today.png'),
       selectedIcon: require('./img/today_selected.png'),
-      title: 'Today'
+      title: 'Later'
     }
   ];
   return tabs;
