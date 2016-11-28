@@ -57,15 +57,13 @@ export default class TodayData extends Component {
   }
 
   fetchWeather() {
-    var url = 'https://www.feelio.cc/api-1.0.php?format=json';
+    var url = 'https://www.feelio.cc/api-1.1.php?latitude=40.7128&longitude=-74.0059';
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
-        var phrase;
         var weatherData = [];
         console.log(jsonData);
-        weather = jsonData.feelio_api;
-        weatherData.push(weather);
+        weatherData.push(jsonData);
 
         this.setState({
           isLoading: false,
@@ -90,7 +88,10 @@ export default class TodayData extends Component {
   }
 
   renderResults() {
-    var {weatherJSON, isLoading, three, six, twelve} = this.state;
+    var {isLoading, three, six, twelve} = this.state;
+    var p = this.state.weatherJSON[0].phrases;
+    var d = this.state.weatherJSON[0].weatherData;
+
     if ( !isLoading) {
       return (
         <View style={styles.container}>
@@ -99,11 +100,11 @@ export default class TodayData extends Component {
               {three}
             </Text>
             <Text style={styles.h1}>
-              {weatherJSON[0].inThreeHours.phrase}
+              {p.inThreeHours}
             </Text>
             <Text style={styles.h2}>
-              Feels like {weatherJSON[0].inThreeHours.feels_like}°F{"\n"}
-              {weatherJSON[0].inThreeHours.summary}
+              Feels like {Math.round(d.hourly.data[3].apparentTemperature)}°F{"\n"}
+              {d.hourly.data[3].summary}
             </Text>
           </View>
           <View style={styles.section}>
@@ -111,11 +112,11 @@ export default class TodayData extends Component {
               {six}
             </Text>
             <Text style={styles.h1}>
-              {weatherJSON[0].inSixHours.phrase}
+              {p.inSixHours}
             </Text>
             <Text style={styles.h2}>
-              Feels like {weatherJSON[0].inSixHours.feels_like}°F{"\n"}
-              {weatherJSON[0].inSixHours.summary}
+            Feels like {Math.round(d.hourly.data[6].apparentTemperature)}°F{"\n"}
+            {d.hourly.data[6].summary}
             </Text>
           </View>
           <View style={styles.section}>
@@ -123,11 +124,11 @@ export default class TodayData extends Component {
               {twelve}
             </Text>
             <Text style={styles.h1}>
-              {weatherJSON[0].inTwelveHours.phrase}
+              {p.inTwelveHours}
             </Text>
             <Text style={styles.h2}>
-              Feels like {weatherJSON[0].inTwelveHours.feels_like}°F{"\n"}
-              {weatherJSON[0].inTwelveHours.summary}
+            Feels like {Math.round(d.hourly.data[12].apparentTemperature)}°F{"\n"}
+            {d.hourly.data[12].summary}
             </Text>
           </View>
         </View>
