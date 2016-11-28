@@ -1,7 +1,7 @@
 # Feelio for iOS
 Building an iOS app for Feelio ☔️
 
-It's currently being beta tested. Coming soon to the Apple App Store.
+Currently in beta. Built with [React Native](https://facebook.github.io/react-native/). 
 
 
 ## Request new features
