@@ -57,14 +57,13 @@ export default class Home extends Component {
   }
 
   fetchWeather() {
-    var url = 'https://www.feelio.cc/api-1.0.php?format=json';
+    var url = 'https://www.feelio.cc/api-1.1.php?latitude=40.7128&longitude=-74.0059';
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
         var weatherData = [];
         console.log(jsonData);
-        weather = jsonData.feelio_api.currently;
-        weatherData.push(weather);
+        weatherData.push(jsonData);
 
         this.setState({
           isLoading: false,
@@ -77,7 +76,6 @@ export default class Home extends Component {
   renderLoadingMessage() {
     return (
       <View style={styles.loadingContainer}>
-        { /* used to be an loading icon there. felt too cheesy. */ }
         <ActivityIndicator
           animating={true}
           color={'rgba(255,255,255,.5)'}
@@ -90,7 +88,10 @@ export default class Home extends Component {
 
   renderResults() {
     var {isLoading} = this.state;
-    if ( !isLoading) {
+    var p = this.state.weatherJSON[0].phrases;
+    var d = this.state.weatherJSON[0].weatherData;
+
+    if ( !isLoading ) {
       return (
         <View style={styles.container}>
           <View style={styles.main}>
@@ -98,13 +99,13 @@ export default class Home extends Component {
             {this.state.welcome}
           </Text>
             <Text style={styles.h1}>
-              {this.state.weatherJSON[0].phrase}
+              {p.now}
             </Text>
           </View>
           <View style={styles.secondary}>
             <Text style={styles.h2}>
-              Feels like {this.state.weatherJSON[0].feels_like}°F{"\n"}
-              {this.state.weatherJSON[0].summary}
+              Feels like {Math.round(d.currently.apparentTemperature)}°F{"\n"}
+              {d.currently.summary}
             </Text>
           </View>
         </View>
