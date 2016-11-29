@@ -1,7 +1,7 @@
 # Feelio for iOS
 Building an iOS app for Feelio ☔️
 
-Currently in beta. Built with [React Native](https://facebook.github.io/react-native/). 
+Currently in beta. Built with [React Native](https://facebook.github.io/react-native/).
 
 
 ## Request new features
@@ -25,6 +25,9 @@ You can also check out our [development roadmap](https://github.com/marineb/feel
 - A way to switch from °F to °C
 
 ## Setup
+- `brew install node`
+- `brew install watchman`
+- `npm install -g react-native-cli`
 - `npm install`
 - `react-native run-ios`
 
