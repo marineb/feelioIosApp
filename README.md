@@ -16,11 +16,11 @@ You can also check out our [development roadmap](https://github.com/marineb/feel
 - Smarter "now" algorithm that takes into account the rest of the day / night [#6](https://github.com/marineb/feelio-ios-app/issues/6)
 - Get the weather no matter where I am (geolocate users, and create a new Feelio API) [~~#4~~](https://github.com/marineb/feelio-ios-app/issues/4) [#5](https://github.com/marineb/feelio-ios-app/issues/5)
 - Get app notifications when I wake up or when I go to bed [#7](https://github.com/marineb/feelio-ios-app/issues/7)
-- I want an algorithm that is personalized to me
 - I want 3 themes:
   - Dark
   - Light
   - A theme that changes depending on day/night and the weather
+- I want an algorithm that is personalized to me and my sensitivity to weather
 - If it’s the evening, don’t give me upcoming hourly (like 4am) but just the weather for tomorrow. And if I’ll need an umbrella.
 - A way to switch from °F to °C
 
