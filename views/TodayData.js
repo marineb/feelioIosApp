@@ -95,7 +95,7 @@ export default class TodayData extends Component {
     if ( !isLoading) {
       return (
         <View style={styles.container}>
-          <View style={styles.section}>
+          <View style={styles.section, styles.margin30}>
             <Text style={styles.time}>
               {three}
             </Text>
@@ -107,7 +107,7 @@ export default class TodayData extends Component {
               {d.hourly.data[3].summary}
             </Text>
           </View>
-          <View style={styles.section}>
+          <View style={styles.section, styles.margin30}>
             <Text style={styles.time}>
               {six}
             </Text>
@@ -155,23 +155,28 @@ const styles = StyleSheet.create({
     backgroundColor: '#142233'
   },
   time: {
-    fontSize: 14,
-    lineHeight: 22,
+    fontSize: 16,
+    lineHeight: 24,
     textAlign: 'center',
-    color: 'rgba(255,255,255,.3)'
+    // fontWeight: 'bold',
+    color: 'rgba(255,255,255,.75)',
+    color: '#b8bcc1'
   },
   h1: {
     fontSize: 20,
     lineHeight: 24,
     marginBottom: 5,
-    color: '#fff',
+    color: 'rgba(255,255,255,.9)',
     textAlign: 'center'
   },
   h2: {
     fontSize: 14,
     lineHeight: 22,
-    color: 'rgba(255,255,255,.3)',
+    color: 'rgba(255,255,255,.5)',
     textAlign: 'center',
+    marginBottom: 0
+  },
+  margin30: {
     marginBottom: 30
   }
 });

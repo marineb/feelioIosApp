@@ -141,13 +141,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 38,
     marginBottom: 5,
-    color: '#fff',
+    color: 'rgba(255,255,255,.9)',
     textAlign: 'center'
   },
   h2: {
     fontSize: 16,
     lineHeight: 28,
-    color: 'rgba(255,255,255,.3)',
+    color: 'rgba(255,255,255,.5)',
     textAlign: 'center'
   }
 });
