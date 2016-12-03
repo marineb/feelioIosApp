@@ -23,11 +23,8 @@ export default class Settings extends Component {
     var {appVersion, appBuild} = this.state;
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Settings</Text>
+        <Text style={styles.title}>Prepared in Brooklyn, NY.</Text>
 
-        <TouchableOpacity onPress={ this.onReplaceTab2Press.bind(this) }>
-          <Text style={styles.button}>Unit toggle coming soon.</Text>
-        </TouchableOpacity>
         <View style={styles.appDetails}>
           <Text style={styles.small}>Version {appVersion}</Text>
           <Text style={styles.small}>Build {appBuild}</Text>
@@ -47,10 +44,6 @@ export default class Settings extends Component {
 
   onModalPress() {
     this._toggleDrawer();
-    this.props.navigator.showModal({
-      title: "Modal",
-      screen: "example.ModalScreen"
-    });
   }
 
   _toggleDrawer() {
@@ -66,17 +59,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#25364B',
+    backgroundColor: '#111',
     justifyContent: 'center',
     width: 300
   },
   title: {
     textAlign: 'center',
-    color: 'white',
-    fontSize: 18,
-    marginBottom: 10,
-    marginTop:10,
-    fontWeight: '500'
+    color: 'rgba(0,0,0,.5)',
   },
   button: {
     textAlign: 'center',
