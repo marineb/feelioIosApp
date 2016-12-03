@@ -104,8 +104,7 @@ export default class Home extends Component {
           </View>
           <View style={styles.secondary}>
             <Text style={styles.h2}>
-              Feels like {Math.round(d.currently.apparentTemperature)}°F{"\n"}
-              {d.currently.summary}
+              Feels like {Math.round(d.currently.apparentTemperature)}°F. {d.currently.summary}.
             </Text>
           </View>
         </View>
@@ -119,7 +118,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     paddingLeft: 10,
     paddingRight: 10,
     backgroundColor: '#142233'
@@ -131,24 +130,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#142233'
   },
+  main: {
+    width: 250
+  },
   welcome: {
-    fontSize: 24,
-    lineHeight: 38,
-    textAlign: 'center',
+    fontSize: 16,
+    lineHeight: 24,
     color: 'rgba(255,255,255,1)'
   },
   h1: {
-    fontSize: 24,
-    lineHeight: 38,
+    fontSize: 16,
+    lineHeight: 24,
     marginBottom: 5,
-    color: 'rgba(255,255,255,.9)',
-    textAlign: 'center'
+    color: 'rgba(255,255,255,.9)'
   },
   h2: {
-    fontSize: 16,
-    lineHeight: 28,
+    fontSize: 12,
+    lineHeight: 20,
     color: 'rgba(255,255,255,.5)',
-    textAlign: 'center'
   }
 });
 
