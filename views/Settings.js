@@ -23,8 +23,6 @@ export default class Settings extends Component {
     var {appVersion, appBuild} = this.state;
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Prepared in Brooklyn, NY.</Text>
-
         <View style={styles.appDetails}>
           <Text style={styles.small}>Version {appVersion}</Text>
           <Text style={styles.small}>Build {appBuild}</Text>

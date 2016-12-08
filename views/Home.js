@@ -15,7 +15,11 @@ export default class Home extends Component {
     this.state = {
       weatherJSON: [],
       isLoading: true,
-      welcome: 'Good morning'
+      welcome: 'Good morning',
+      // latitude: 40.7128,
+      // longitude: -74.0059,
+      latitude: 'unknown',
+      longitude: 'unknown'
     };
 
     // Refresh data every 60 seconds (60,000 ms)
@@ -26,7 +30,7 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    this.fetchWeather();
+    this.getLocation();
     this.fetchTimeOfDay();
     console.log("Component mounted.");
   }
@@ -37,6 +41,39 @@ export default class Home extends Component {
       return this.renderLoadingMessage();
     else
       return this.renderResults();
+  }
+
+  getLocation() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        var latitude = JSON.stringify(position.coords.latitude);
+        var longitude = JSON.stringify(position.coords.longitude);
+        this.setState({
+          latitude: latitude,
+          longitude: longitude
+        });
+        this.fetchWeather(latitude, longitude);
+      },
+      (error) => alert(JSON.stringify(error)),
+      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+    );
+  }
+
+  fetchWeather(latitude, longitude) {
+    var url = "https://www.feelio.cc/api-1.1.php?latitude=" + latitude + "&longitude=" + longitude;
+    fetch(url)
+      .then( response => response.json() )
+      .then( jsonData => {
+        var weatherData = [];
+        console.log(jsonData);
+        weatherData.push(jsonData);
+
+        this.setState({
+          isLoading: false,
+          weatherJSON: [].concat(weatherData)
+        });
+      })
+    .catch( error => console.log('Fetch error ' + error) );
   }
 
   fetchTimeOfDay() {
@@ -54,23 +91,6 @@ export default class Home extends Component {
         welcome: 'Good evening.'
       });
     }
-  }
-
-  fetchWeather() {
-    var url = 'https://www.feelio.cc/api-1.1.php?latitude=40.7128&longitude=-74.0059';
-    fetch(url)
-      .then( response => response.json() )
-      .then( jsonData => {
-        var weatherData = [];
-        console.log(jsonData);
-        weatherData.push(jsonData);
-
-        this.setState({
-          isLoading: false,
-          weatherJSON: [].concat(weatherData)
-        });
-      })
-    .catch( error => console.log('Fetch error ' + error) );
   }
 
   renderLoadingMessage() {

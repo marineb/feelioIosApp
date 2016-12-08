@@ -15,7 +15,9 @@ export default class TodayData extends Component {
     this.state = {
       weatherJSON: [],
       isLoading: true,
-      welcome: 'Good morning'
+      welcome: 'Good morning',
+      latitude: 'unknown',
+      longitude: 'unknown'
     };
 
     // Refresh data every 60 seconds (60,000 ms)
@@ -26,7 +28,7 @@ export default class TodayData extends Component {
   }
 
   componentDidMount() {
-    this.fetchWeather();
+    this.getLocation();
     this.setHours();
     console.log("Component mounted.");
   }
@@ -56,8 +58,24 @@ export default class TodayData extends Component {
     });
   }
 
-  fetchWeather() {
-    var url = 'https://www.feelio.cc/api-1.1.php?latitude=40.7128&longitude=-74.0059';
+  getLocation() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        var latitude = JSON.stringify(position.coords.latitude);
+        var longitude = JSON.stringify(position.coords.longitude);
+        this.setState({
+          latitude: latitude,
+          longitude: longitude
+        });
+        this.fetchWeather(latitude, longitude);
+      },
+      (error) => alert(JSON.stringify(error)),
+      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+    );
+  }
+
+  fetchWeather(latitude, longitude) {
+    var url = "https://www.feelio.cc/api-1.1.php?latitude=" + latitude + "&longitude=" + longitude;
     fetch(url)
       .then( response => response.json() )
       .then( jsonData => {
