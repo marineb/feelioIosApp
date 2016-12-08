@@ -13,8 +13,7 @@ These are the features we're working on, mostly in that order.
 
 You can also check out our [development roadmap](https://github.com/marineb/feelio-ios-app/projects/1).
 
-- Smarter "now" algorithm that takes into account the rest of the day / night [#6](https://github.com/marineb/feelio-ios-app/issues/6)
-- Get the weather no matter where I am (geolocate users, and create a new Feelio API) [~~#4~~](https://github.com/marineb/feelio-ios-app/issues/4) [#5](https://github.com/marineb/feelio-ios-app/issues/5)
+[#5](https://github.com/marineb/feelio-ios-app/issues/5)
 - Get app notifications when I wake up or when I go to bed [#7](https://github.com/marineb/feelio-ios-app/issues/7)
 - I want 3 themes:
   - Dark
