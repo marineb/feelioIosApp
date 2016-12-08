@@ -13,7 +13,6 @@ These are the features we're working on, mostly in that order.
 
 You can also check out our [development roadmap](https://github.com/marineb/feelio-ios-app/projects/1).
 
-[#5](https://github.com/marineb/feelio-ios-app/issues/5)
 - Get app notifications when I wake up or when I go to bed [#7](https://github.com/marineb/feelio-ios-app/issues/7)
 - I want 3 themes:
   - Dark
