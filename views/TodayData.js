@@ -121,8 +121,7 @@ export default class TodayData extends Component {
               {p.inThreeHours}
             </Text>
             <Text style={styles.h2}>
-              Feels like {Math.round(d.hourly.data[3].apparentTemperature)}°F{"\n"}
-              {d.hourly.data[3].summary}
+              Feels like {Math.round(d.hourly.data[3].apparentTemperature)}°F. {d.hourly.data[3].summary}
             </Text>
           </View>
           <View style={styles.section, styles.margin30}>
@@ -133,8 +132,7 @@ export default class TodayData extends Component {
               {p.inSixHours}
             </Text>
             <Text style={styles.h2}>
-            Feels like {Math.round(d.hourly.data[6].apparentTemperature)}°F{"\n"}
-            {d.hourly.data[6].summary}
+            Feels like {Math.round(d.hourly.data[6].apparentTemperature)}°F. {d.hourly.data[6].summary}
             </Text>
           </View>
           <View style={styles.section}>
@@ -145,8 +143,7 @@ export default class TodayData extends Component {
               {p.inTwelveHours}
             </Text>
             <Text style={styles.h2}>
-            Feels like {Math.round(d.hourly.data[12].apparentTemperature)}°F{"\n"}
-            {d.hourly.data[12].summary}
+            Feels like {Math.round(d.hourly.data[12].apparentTemperature)}°F. {d.hourly.data[12].summary}
             </Text>
           </View>
         </View>
@@ -160,7 +157,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     paddingLeft: 10,
     paddingRight: 10,
     backgroundColor: '#142233'
@@ -173,25 +170,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#142233'
   },
   time: {
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 24,
-    textAlign: 'center',
-    // fontWeight: 'bold',
-    color: 'rgba(255,255,255,.75)',
-    color: '#b8bcc1'
+    fontWeight: 'bold',
+    color: 'rgba(255,255,255,1)'
   },
   h1: {
-    fontSize: 20,
+    fontSize: 16,
     lineHeight: 24,
     marginBottom: 5,
-    color: 'rgba(255,255,255,.9)',
-    textAlign: 'center'
+    color: 'rgba(255,255,255,1)'
   },
   h2: {
-    fontSize: 14,
-    lineHeight: 22,
+    fontSize: 12,
+    lineHeight: 20,
     color: 'rgba(255,255,255,.5)',
-    textAlign: 'center',
     marginBottom: 0
   },
   margin30: {

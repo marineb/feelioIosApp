@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     marginBottom: 5,
-    color: 'rgba(255,255,255,.9)'
+    color: 'rgba(255,255,255,1)'
   },
   h2: {
     fontSize: 12,
