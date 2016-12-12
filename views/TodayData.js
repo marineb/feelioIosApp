@@ -47,7 +47,7 @@ export default class TodayData extends Component {
     var amOrPm = then.getHours() >= 12 ? "PM" : "AM";
     var hour = then.getHours() % 12;
     hour = hour ? hour : 12;
-    return hour+":00 "+amOrPm;
+    return hour+" "+amOrPm;
   }
 
   setHours() {
@@ -121,7 +121,7 @@ export default class TodayData extends Component {
               {p.inThreeHours}
             </Text>
             <Text style={styles.h2}>
-              Feels like {Math.round(d.hourly.data[3].apparentTemperature)}°F. {d.hourly.data[3].summary}
+              Feels like {Math.round(d.hourly.data[3].apparentTemperature)}°F. {d.hourly.data[3].summary}.
             </Text>
           </View>
           <View style={styles.section, styles.margin30}>
@@ -132,7 +132,7 @@ export default class TodayData extends Component {
               {p.inSixHours}
             </Text>
             <Text style={styles.h2}>
-            Feels like {Math.round(d.hourly.data[6].apparentTemperature)}°F. {d.hourly.data[6].summary}
+            Feels like {Math.round(d.hourly.data[6].apparentTemperature)}°F. {d.hourly.data[6].summary}.
             </Text>
           </View>
           <View style={styles.section}>
@@ -143,7 +143,7 @@ export default class TodayData extends Component {
               {p.inTwelveHours}
             </Text>
             <Text style={styles.h2}>
-            Feels like {Math.round(d.hourly.data[12].apparentTemperature)}°F. {d.hourly.data[12].summary}
+            Feels like {Math.round(d.hourly.data[12].apparentTemperature)}°F. {d.hourly.data[12].summary}.
             </Text>
           </View>
         </View>
