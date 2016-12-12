@@ -1,6 +1,7 @@
 package com.feelioiosapp;
 
 import com.facebook.react.ReactActivity;
+import com.evollu.react.fa.FIRAnalyticsPackage;
 
 public class MainActivity extends ReactActivity {
 
