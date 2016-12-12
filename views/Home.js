@@ -155,19 +155,22 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 16,
-    lineHeight: 24,
-    color: 'rgba(255,255,255,1)'
+    lineHeight: 28,
+    color: 'rgba(255,255,255,1)',
+    fontFamily: 'AvenirNext-Medium'
   },
   h1: {
     fontSize: 16,
-    lineHeight: 24,
-    marginBottom: 5,
-    color: 'rgba(255,255,255,1)'
+    lineHeight: 28,
+    marginBottom: 4,
+    color: 'rgba(255,255,255,1)',
+    fontFamily: 'AvenirNext-Medium'
   },
   h2: {
     fontSize: 12,
     lineHeight: 20,
     color: 'rgba(255,255,255,.5)',
+    fontFamily: 'AvenirNext-Medium'
   }
 });
 

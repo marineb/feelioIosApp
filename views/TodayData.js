@@ -171,20 +171,22 @@ const styles = StyleSheet.create({
   },
   time: {
     fontSize: 14,
-    lineHeight: 24,
-    fontWeight: 'bold',
-    color: 'rgba(255,255,255,1)'
+    lineHeight: 26,
+    color: 'rgba(255,255,255,1)',
+    fontFamily: 'AvenirNext-Bold'
   },
   h1: {
     fontSize: 16,
-    lineHeight: 24,
-    marginBottom: 5,
-    color: 'rgba(255,255,255,1)'
+    lineHeight: 28,
+    marginBottom: 2,
+    color: 'rgba(255,255,255,1)',
+    fontFamily: 'AvenirNext-Medium'
   },
   h2: {
     fontSize: 12,
     lineHeight: 20,
     color: 'rgba(255,255,255,.5)',
+    fontFamily: 'AvenirNext-Medium',
     marginBottom: 0
   },
   margin30: {

@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
   small: {
     color: 'rgba(255,255,255,.3)',
     textAlign: 'center',
-    lineHeight: 20
+    lineHeight: 20,
+    fontFamily: 'AvenirNext-Medium'
   },
   appDetails: {
     bottom: 50,
