@@ -1,3 +1,0 @@
-target "feelioIosApp" do
-  pod 'Firebase/Core'
-end
