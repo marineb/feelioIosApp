@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
-		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
-		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
-		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
-		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		00C302E51ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		00C302E71ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		00C302E81ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		00C302E91ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		00C302EA1ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* feelioIosAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* feelioIosAppTests.m */; };
-		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
-		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
-		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		015F4DE170AF0A8DDA72AEB5 /* libPods-feelioIosApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C18088FE13342083BC46FC85 /* libPods-feelioIosApp.a */; };
+		133E29F31AD74F7200F7D852 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		139105C61AF99C1200B5F7CC /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		139FDEF61B0652A700C62182 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		140ED2AC1D01E1AD002B40FF /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		146834051AC3E58100842450 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		5524DEBC48C05A4FD1FAADA9 /* libPods-feelioIosAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CFDD26E6AA65FEF5FB637D /* libPods-feelioIosAppTests.a */; };
+		812304521DFE237E00058C89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 812304511DFE237E00058C89 /* GoogleService-Info.plist */; };
+		812304531DFE237E00058C89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 812304511DFE237E00058C89 /* GoogleService-Info.plist */; };
 		8190E1761DE21AD2008919C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8190E1751DE21AD2008919C1 /* Launch Screen.storyboard */; };
-		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		832341BD1AAA6AB300B99B32 /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		E3659906E4D04C4790D756AD /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0C1CDCCE84442BB775DD61 /* libRNDeviceInfo.a */; };
 		E442A7687D32455484B9B4E7 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CFE9054B914DDA81D179D4 /* libReactNativeNavigation.a */; };
 /* End PBXBuildFile section */
@@ -191,10 +195,17 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = feelioIosApp/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1F76EC6AA2F44B7FABABB63B /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
+		266E8A582C43A875C0272C69 /* Pods-feelioIosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelioIosAppTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-feelioIosAppTests/Pods-feelioIosAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		32E6EC31F9D163B4AB8C5615 /* Pods-feelioIosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelioIosAppTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-feelioIosAppTests/Pods-feelioIosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34CFDD26E6AA65FEF5FB637D /* libPods-feelioIosAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-feelioIosAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36198CF820FE44CF9AC39C23 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
+		3B70699CF4DB5DC688D5106C /* Pods-feelioIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelioIosApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-feelioIosApp/Pods-feelioIosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		65C8C7B8E19D0A751E8E5363 /* Pods-feelioIosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelioIosApp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-feelioIosApp/Pods-feelioIosApp.release.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		812304511DFE237E00058C89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8190E1751DE21AD2008919C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		C18088FE13342083BC46FC85 /* libPods-feelioIosApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-feelioIosApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0C1CDCCE84442BB775DD61 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,7 +214,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				140ED2AC1D01E1AD002B40FF /* ReferenceProxy in Frameworks */,
+				5524DEBC48C05A4FD1FAADA9 /* libPods-feelioIosAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,18 +223,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				146834051AC3E58100842450 /* libReact.a in Frameworks */,
-				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
-				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
-				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
-				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
-				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
-				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
-				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
-				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
-				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				146834051AC3E58100842450 /* ReferenceProxy in Frameworks */,
+				00C302E51ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */,
+				00C302E71ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */,
+				00C302E81ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */,
+				133E29F31AD74F7200F7D852 /* ReferenceProxy in Frameworks */,
+				00C302E91ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */,
+				139105C61AF99C1200B5F7CC /* ReferenceProxy in Frameworks */,
+				832341BD1AAA6AB300B99B32 /* ReferenceProxy in Frameworks */,
+				00C302EA1ABCBA2D00DB3ED1 /* ReferenceProxy in Frameworks */,
+				139FDEF61B0652A700C62182 /* ReferenceProxy in Frameworks */,
 				E442A7687D32455484B9B4E7 /* libReactNativeNavigation.a in Frameworks */,
 				E3659906E4D04C4790D756AD /* libRNDeviceInfo.a in Frameworks */,
+				015F4DE170AF0A8DDA72AEB5 /* libPods-feelioIosApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +327,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				812304511DFE237E00058C89 /* GoogleService-Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				8190E1751DE21AD2008919C1 /* Launch Screen.storyboard */,
 			);
@@ -327,6 +341,15 @@
 				81E411FA1DE1609E005D61AB /* libReact-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5C27E24D4834AA63BC680EE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18088FE13342083BC46FC85 /* libPods-feelioIosApp.a */,
+				34CFDD26E6AA65FEF5FB637D /* libPods-feelioIosAppTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -389,6 +412,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* feelioIosAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				9990F993CB80270A0F03833C /* Pods */,
+				5C27E24D4834AA63BC680EE0 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -403,6 +428,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9990F993CB80270A0F03833C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B70699CF4DB5DC688D5106C /* Pods-feelioIosApp.debug.xcconfig */,
+				65C8C7B8E19D0A751E8E5363 /* Pods-feelioIosApp.release.xcconfig */,
+				32E6EC31F9D163B4AB8C5615 /* Pods-feelioIosAppTests.debug.xcconfig */,
+				266E8A582C43A875C0272C69 /* Pods-feelioIosAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,9 +446,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "feelioIosAppTests" */;
 			buildPhases = (
+				078536FD4B3256800E0CA39C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				3D0898337002B0A5E794D371 /* [CP] Embed Pods Frameworks */,
+				C9D7E6ABDA0371172A6C2CA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,10 +467,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "feelioIosApp" */;
 			buildPhases = (
+				AA4D2F850F87C3622B0453C7 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				426ECA1AEB91229EA1200966 /* [CP] Embed Pods Frameworks */,
+				B0961780BAD2448EC19FBC14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -675,6 +717,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812304531DFE237E00058C89 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +727,7 @@
 			files = (
 				8190E1761DE21AD2008919C1 /* Launch Screen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				812304521DFE237E00058C89 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,6 +747,96 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
+		};
+		078536FD4B3256800E0CA39C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0898337002B0A5E794D371 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-feelioIosAppTests/Pods-feelioIosAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		426ECA1AEB91229EA1200966 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-feelioIosApp/Pods-feelioIosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4D2F850F87C3622B0453C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0961780BAD2448EC19FBC14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-feelioIosApp/Pods-feelioIosApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9D7E6ABDA0371172A6C2CA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-feelioIosAppTests/Pods-feelioIosAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -737,6 +871,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E6EC31F9D163B4AB8C5615 /* Pods-feelioIosAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -759,6 +894,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 266E8A582C43A875C0272C69 /* Pods-feelioIosAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -778,6 +914,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B70699CF4DB5DC688D5106C /* Pods-feelioIosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -805,6 +942,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65C8C7B8E19D0A751E8E5363 /* Pods-feelioIosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;

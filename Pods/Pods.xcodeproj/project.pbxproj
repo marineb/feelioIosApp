@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22ACCF3BF873FE5A23425F6770341244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		35DDF6C2A35E50D081B4242195CF07AE /* Pods-feelioIosAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC82BB97BD9C184CFA1746569B2A146 /* Pods-feelioIosAppTests-dummy.m */; };
+		51D94F5B4BDAD840D2C9F9A30B8B8265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A7162B5BC38CEAF6870ED457EC3D569C /* Pods-feelioIosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EBEAE8B695B11B545032CC4B0E61BF /* Pods-feelioIosApp-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		063CD9091380E06488C5DDF14A20DF04 /* Pods-feelioIosApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-feelioIosApp-frameworks.sh"; sourceTree = "<group>"; };
+		2C9DC8E7AF8E74C3ACD606C565401756 /* Pods-feelioIosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-feelioIosAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E7CA5A790B3B4A5A335F7A211D4076F /* Pods-feelioIosAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-feelioIosAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		51AD4C04B4D5FA9DC97B4030A61936EB /* Pods-feelioIosAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-feelioIosAppTests-resources.sh"; sourceTree = "<group>"; };
+		638FAA678FE97D6A04480B7B1BB962E6 /* libPods-feelioIosApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-feelioIosApp.a"; path = "libPods-feelioIosApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D721B009D71A3E9F625B8DD487440E6 /* Pods-feelioIosAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-feelioIosAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		796E231F46F68EBBFEC51C5D7E4613C4 /* Pods-feelioIosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-feelioIosApp.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5D5F2A482B6104D9BDB82A631CCF9B1 /* Pods-feelioIosApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-feelioIosApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A5EBEAE8B695B11B545032CC4B0E61BF /* Pods-feelioIosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-feelioIosApp-dummy.m"; sourceTree = "<group>"; };
+		C69AA81CB4396FC64934CEE8D746B1B0 /* Pods-feelioIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-feelioIosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC31FB7424221A06BD86329512DB421E /* Pods-feelioIosAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-feelioIosAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CD31BC402ABAF0882F78C00BD826A687 /* Pods-feelioIosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-feelioIosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDD79B6D9FC322646B29C18D39ED0907 /* Pods-feelioIosApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-feelioIosApp-resources.sh"; sourceTree = "<group>"; };
+		E7477181DCFB3F47639D7B52529204D3 /* Pods-feelioIosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-feelioIosApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2491EE42A6BCE3E3904073A0F283705 /* libPods-feelioIosAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-feelioIosAppTests.a"; path = "libPods-feelioIosAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC82BB97BD9C184CFA1746569B2A146 /* Pods-feelioIosAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-feelioIosAppTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A05410504DB930240681482DB3813174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D94F5B4BDAD840D2C9F9A30B8B8265 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DBBE6D6F7A69B85EFAA4119B6D54EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22ACCF3BF873FE5A23425F6770341244 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F91E5F05D09A0B389B45A53F877587F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638FAA678FE97D6A04480B7B1BB962E6 /* libPods-feelioIosApp.a */,
+				F2491EE42A6BCE3E3904073A0F283705 /* libPods-feelioIosAppTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28A9D7446E3099E470FC303CEE8060FD /* Pods-feelioIosAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC31FB7424221A06BD86329512DB421E /* Pods-feelioIosAppTests-acknowledgements.markdown */,
+				6D721B009D71A3E9F625B8DD487440E6 /* Pods-feelioIosAppTests-acknowledgements.plist */,
+				FCC82BB97BD9C184CFA1746569B2A146 /* Pods-feelioIosAppTests-dummy.m */,
+				4E7CA5A790B3B4A5A335F7A211D4076F /* Pods-feelioIosAppTests-frameworks.sh */,
+				51AD4C04B4D5FA9DC97B4030A61936EB /* Pods-feelioIosAppTests-resources.sh */,
+				CD31BC402ABAF0882F78C00BD826A687 /* Pods-feelioIosAppTests.debug.xcconfig */,
+				2C9DC8E7AF8E74C3ACD606C565401756 /* Pods-feelioIosAppTests.release.xcconfig */,
+			);
+			name = "Pods-feelioIosAppTests";
+			path = "Target Support Files/Pods-feelioIosAppTests";
+			sourceTree = "<group>";
+		};
+		2F4588519B4DE8842ECF8796D476FE25 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1D68C9EB7D45CAF16C0271B953A13D9 /* Pods-feelioIosApp */,
+				28A9D7446E3099E470FC303CEE8060FD /* Pods-feelioIosAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1F91E5F05D09A0B389B45A53F877587F /* Products */,
+				2F4588519B4DE8842ECF8796D476FE25 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B1D68C9EB7D45CAF16C0271B953A13D9 /* Pods-feelioIosApp */ = {
+			isa = PBXGroup;
+			children = (
+				A5D5F2A482B6104D9BDB82A631CCF9B1 /* Pods-feelioIosApp-acknowledgements.markdown */,
+				E7477181DCFB3F47639D7B52529204D3 /* Pods-feelioIosApp-acknowledgements.plist */,
+				A5EBEAE8B695B11B545032CC4B0E61BF /* Pods-feelioIosApp-dummy.m */,
+				063CD9091380E06488C5DDF14A20DF04 /* Pods-feelioIosApp-frameworks.sh */,
+				DDD79B6D9FC322646B29C18D39ED0907 /* Pods-feelioIosApp-resources.sh */,
+				C69AA81CB4396FC64934CEE8D746B1B0 /* Pods-feelioIosApp.debug.xcconfig */,
+				796E231F46F68EBBFEC51C5D7E4613C4 /* Pods-feelioIosApp.release.xcconfig */,
+			);
+			name = "Pods-feelioIosApp";
+			path = "Target Support Files/Pods-feelioIosApp";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54665D96E53E84174373DF707A12AC63 /* Pods-feelioIosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D259EF6CAFA69A1736A7FFDF2C3F9ED /* Build configuration list for PBXNativeTarget "Pods-feelioIosApp" */;
+			buildPhases = (
+				CCBFABE5651EFB260930BDAFAF448C4E /* Sources */,
+				A05410504DB930240681482DB3813174 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-feelioIosApp";
+			productName = "Pods-feelioIosApp";
+			productReference = 638FAA678FE97D6A04480B7B1BB962E6 /* libPods-feelioIosApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AC4DCBAEA544F4D89AC2F6E7683A8FB4 /* Pods-feelioIosAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC9E0F2D674C08D8A15680EC106C606 /* Build configuration list for PBXNativeTarget "Pods-feelioIosAppTests" */;
+			buildPhases = (
+				29F7BC2E83B76B2EF51ACF01567AE16C /* Sources */,
+				C0DBBE6D6F7A69B85EFAA4119B6D54EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-feelioIosAppTests";
+			productName = "Pods-feelioIosAppTests";
+			productReference = F2491EE42A6BCE3E3904073A0F283705 /* libPods-feelioIosAppTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1F91E5F05D09A0B389B45A53F877587F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54665D96E53E84174373DF707A12AC63 /* Pods-feelioIosApp */,
+				AC4DCBAEA544F4D89AC2F6E7683A8FB4 /* Pods-feelioIosAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29F7BC2E83B76B2EF51ACF01567AE16C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DDF6C2A35E50D081B4242195CF07AE /* Pods-feelioIosAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBFABE5651EFB260930BDAFAF448C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7162B5BC38CEAF6870ED457EC3D569C /* Pods-feelioIosApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		16E34891446A11F441FFF468950D1579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9DC8E7AF8E74C3ACD606C565401756 /* Pods-feelioIosAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		252277DEEADE821877F595033551A4BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796E231F46F68EBBFEC51C5D7E4613C4 /* Pods-feelioIosApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8608F0D869F8C06773AAD86441E298E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD31BC402ABAF0882F78C00BD826A687 /* Pods-feelioIosAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		92889BF6926DDD6AD32D9407D59AB630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69AA81CB4396FC64934CEE8D746B1B0 /* Pods-feelioIosApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC9E0F2D674C08D8A15680EC106C606 /* Build configuration list for PBXNativeTarget "Pods-feelioIosAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8608F0D869F8C06773AAD86441E298E2 /* Debug */,
+				16E34891446A11F441FFF468950D1579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D259EF6CAFA69A1736A7FFDF2C3F9ED /* Build configuration list for PBXNativeTarget "Pods-feelioIosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92889BF6926DDD6AD32D9407D59AB630 /* Debug */,
+				252277DEEADE821877F595033551A4BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
