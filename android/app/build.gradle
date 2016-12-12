@@ -126,6 +126,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-firebase-analytics')
     compile project(':react-native-device-info')
     compile project(':react-native-navigation')
     compile fileTree(dir: "libs", include: ["*.jar"])
