@@ -22,9 +22,8 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		630DBDF042D14F83840983BD /* libRNFIRAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1DD978E779434D947C8285 /* libRNFIRAnalytics.a */; };
-		81320D051DFE54C10079C8C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81320D041DFE54C10079C8C6 /* GoogleService-Info.plist */; };
-		81320D061DFE54C10079C8C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81320D041DFE54C10079C8C6 /* GoogleService-Info.plist */; };
 		8190E1761DE21AD2008919C1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8190E1751DE21AD2008919C1 /* Launch Screen.storyboard */; };
+		81B0D84C1E50E637000D9948 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81B0D84B1E50E637000D9948 /* GoogleService-Info.plist */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		A38038F164CC9CC450BC96A8 /* libPods-feelioIosApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C7470F513E8FEA6C94D562 /* libPods-feelioIosApp.a */; };
 		E3659906E4D04C4790D756AD /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0C1CDCCE84442BB775DD61 /* libRNDeviceInfo.a */; };
@@ -208,9 +207,9 @@
 		4B1DD978E779434D947C8285 /* libRNFIRAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFIRAnalytics.a; sourceTree = "<group>"; };
 		70401F17EA4AB59CC11DE85C /* Pods-feelioIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelioIosApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feelioIosApp/Pods-feelioIosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
-		81320D041DFE54C10079C8C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81320D3C1DFE56EC0079C8C6 /* feelioIosApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = feelioIosApp.entitlements; path = feelioIosApp/feelioIosApp.entitlements; sourceTree = "<group>"; };
 		8190E1751DE21AD2008919C1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		81B0D84B1E50E637000D9948 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "feelioIosApp/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		B6D610534ADC3EBAF97C962A /* Pods-feelioIosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feelioIosApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-feelioIosApp/Pods-feelioIosApp.release.xcconfig"; sourceTree = "<group>"; };
 		CD0C1CDCCE84442BB775DD61 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNDeviceInfo.a; sourceTree = "<group>"; };
@@ -335,7 +334,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81320D041DFE54C10079C8C6 /* GoogleService-Info.plist */,
+				81B0D84B1E50E637000D9948 /* GoogleService-Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				8190E1751DE21AD2008919C1 /* Launch Screen.storyboard */,
 			);
@@ -742,7 +741,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81320D061DFE54C10079C8C6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,8 +749,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8190E1761DE21AD2008919C1 /* Launch Screen.storyboard in Resources */,
+				81B0D84C1E50E637000D9948 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				81320D051DFE54C10079C8C6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
